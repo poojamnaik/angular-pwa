@@ -8,6 +8,7 @@
     "build:prod": "ng build prod",
     "build:app-shell" : "ng run angular-pwa:app-shell",
     "build:app-shell:prod" : "ng run angular-pwa:app-shell:production",
+    "start:app-shell:http-server": "http-server -p 8080 -c-1 dist/angular-pwa",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
