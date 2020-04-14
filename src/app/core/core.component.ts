@@ -9,7 +9,7 @@ import { CoreService } from './core.service';
 })
 export class CoreComponent implements OnInit {
   title = 'my-app';
-  readonly VAPID_PUBLIC_KEY = "BPvPWzqyLArXdBH0wNAIe9-J68fEnbfTKnQD9ZXvPGVSXKLLw4gr9mFTjKJ94RD4ibimHmGL_kYv3eiXQTmbV6s";
+  readonly VAPID_PUBLIC_KEY = 'BPvPWzqyLArXdBH0wNAIe9-J68fEnbfTKnQD9ZXvPGVSXKLLw4gr9mFTjKJ94RD4ibimHmGL_kYv3eiXQTmbV6s';
   constructor(
     private swPush: SwPush,
     private coreService: CoreService
