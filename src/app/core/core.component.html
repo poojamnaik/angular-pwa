@@ -51,6 +51,14 @@
       </a>
   
     </div>
+    <div *ngIf="notificationEnabled">
+      <p >
+        <button class= "btn btn-primary" (click) = subscribe() style="margin: 10px"> Subscribe </button>
+        <button class= "btn btn-primary" (click) = send()> Send </button>
+      </p>
+    </div>
+  
+
     </div>
  
     <div class="footer"></div>

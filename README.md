@@ -1,27 +1,19 @@
-# LivestaxPortal
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.0.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+http-server -p 8080 -c-1 dist/livestax-portal
 
-## Code scaffolding
+Project demonstrates use of service worker:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+This makes he project available offlobe.
+When a new version of the project is Service
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+web-push generate-vapid-keys --json
 
-## Running end-to-end tests
+public key is publicly available identifier of the given application server that can send notifications.
+These 
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+{"publicKey":"BPvPWzqyLArXdBH0wNAIe9-J68fEnbfTKnQD9ZXvPGVSXKLLw4gr9mFTjKJ94RD4ibimHmGL_kYv3eiXQTmbV6s","privateKey":"xL2mBj4SxLJn7JoGajJ3iOg0b_h8jsEOk_ILfvS1pDI"}
