@@ -234,3 +234,44 @@
       visibility: hidden;
     }
   }
+
+  // CSS grid styling
+
+  .container {
+    margin: 0 -8px;
+    padding: 0;
+    display: grid;
+    min-height: 100vh;
+    min-width: 100%;
+    grid-template-rows: 1fr 90px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "content"
+                         "footer";
+}
+
+.footer {
+  background-image: linear-gradient(#1976d2 , white 147%);
+  grid-area: footer;
+}
+
+.aside {
+  background-color: lightgrey;
+  grid-area: sidebar;
+}
+
+.main {
+  padding: 70px;
+  background-color: white;
+  grid-area: content;
+}
+
+@media screen and (min-width: 600px) {
+  /*write your css in this code block*/
+  .container {
+    grid-template-columns: 40px 1fr;
+    grid-template-rows: 1fr 90px;
+    grid-template-areas: "sidebar  content"
+                         "footer  footer";
+}
+ 
+}
